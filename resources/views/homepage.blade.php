@@ -29,13 +29,19 @@
     </nav>
     <!-- header ends here -->
 
-    <div class="container py-md-5">
-      <div class="row align-items-center">
-        <div class="col-lg-7 py-3 py-md-5">
-          <h1 class="display-3">Remember Writing?</h1>
-          <p class="lead text-muted">Are you sick of short tweets and impersonal &ldquo;shared&rdquo; posts that are reminiscent of the late 90&rsquo;s email forwards? We believe getting back to actually writing is the key to enjoying the internet again.</p>
+    <div class="con-tainer">
+      <div class="parallax-container" data-tilt data-tilt-max="3" data-tilt-full-page-listening>
+        <div class="back-image-container">
+          <img src="../img/back.png" class="image" width="430">
         </div>
-        <div class="col-lg-5 pl-lg-5 pb-3 py-lg-5">
+        <div class="">
+          <img src="../img/mid.png" class="image" width="420">
+        </div>
+        <div class="front-image-container">
+          <img src="../img/front.png" class="image" width="480">
+        </div>
+      </div>
+        <div class="form-container">
           <form action="#" method="POST" id="registration-form">
             <div class="form-group">
               <label for="username-register" class="text-muted mb-1"><small>Username</small></label>
@@ -65,23 +71,28 @@
               <div class="box">
               <input name="password" id="password-register-confirm" class="input" type="password" placeholder="Confirm password" />
             </div>
-
             </div>
-            <br>
             <div class="box">
-            <button type="submit" class="button">Sign Up</button>
+            <button type="submit" class="button mt-2">Sign Up</button>
             </div>
           </form>
         </div>
-      </div>
     </div>
 
     <!-- footer begins -->
-    <footer class="border-top text-center small text-muted py-3">
-      <p class="m-0"><a href="/" class="text-muted">MS</a> Made with 💜 by <a class="text-muted" target="_blank" href="https://github.com/abderrahmaneBouallaga">Abderrahmane BOUALLAGA</a></p>
+    <footer class="footer">
+      <p class="footer-text"><a href="/" class="text-muted"></a> Made with 💜 by <a class="text-muted" target="_blank" href="https://github.com/abderrahmaneBouallaga">Abderrahmane BOUALLAGA</a></p>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".parallax-container"), {
+        max: 3,
+        speed: 400,
+        perspective: 1000
+      });
+      
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
